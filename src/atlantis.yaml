@@ -1,0 +1,14 @@
+version: 3
+projects:
+  - name: netology-project
+    dir: .
+    workspace: stage
+    autoplan:
+      when_modified: ["*.tf"]
+      enabled: true
+  - name: netology-project
+    dir: .
+    workspace: prod
+    autoplan:
+      when_modified: ["*.tf"]
+      enabled: true
