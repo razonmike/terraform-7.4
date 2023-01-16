@@ -1,5 +1,4 @@
 module "instance" {
-  /*  for_each       = local.vms[terraform.workspace]*/
   source        = "../modules/instance"
   zone          = var.yc_region
   folder_id     = var.yc_folder_id
